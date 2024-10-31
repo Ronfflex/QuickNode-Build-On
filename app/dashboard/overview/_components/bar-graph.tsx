@@ -20,121 +20,118 @@ import {
 export const description = 'An interactive bar chart';
 
 const chartData = [
-  { date: '2024-04-01', desktop: 222, mobile: 150 },
-  { date: '2024-04-02', desktop: 97, mobile: 180 },
-  { date: '2024-04-03', desktop: 167, mobile: 120 },
-  { date: '2024-04-04', desktop: 242, mobile: 260 },
-  { date: '2024-04-05', desktop: 373, mobile: 290 },
-  { date: '2024-04-06', desktop: 301, mobile: 340 },
-  { date: '2024-04-07', desktop: 245, mobile: 180 },
-  { date: '2024-04-08', desktop: 409, mobile: 320 },
-  { date: '2024-04-09', desktop: 59, mobile: 110 },
-  { date: '2024-04-10', desktop: 261, mobile: 190 },
-  { date: '2024-04-11', desktop: 327, mobile: 350 },
-  { date: '2024-04-12', desktop: 292, mobile: 210 },
-  { date: '2024-04-13', desktop: 342, mobile: 380 },
-  { date: '2024-04-14', desktop: 137, mobile: 220 },
-  { date: '2024-04-15', desktop: 120, mobile: 170 },
-  { date: '2024-04-16', desktop: 138, mobile: 190 },
-  { date: '2024-04-17', desktop: 446, mobile: 360 },
-  { date: '2024-04-18', desktop: 364, mobile: 410 },
-  { date: '2024-04-19', desktop: 243, mobile: 180 },
-  { date: '2024-04-20', desktop: 89, mobile: 150 },
-  { date: '2024-04-21', desktop: 137, mobile: 200 },
-  { date: '2024-04-22', desktop: 224, mobile: 170 },
-  { date: '2024-04-23', desktop: 138, mobile: 230 },
-  { date: '2024-04-24', desktop: 387, mobile: 290 },
-  { date: '2024-04-25', desktop: 215, mobile: 250 },
-  { date: '2024-04-26', desktop: 75, mobile: 130 },
-  { date: '2024-04-27', desktop: 383, mobile: 420 },
-  { date: '2024-04-28', desktop: 122, mobile: 180 },
-  { date: '2024-04-29', desktop: 315, mobile: 240 },
-  { date: '2024-04-30', desktop: 454, mobile: 380 },
-  { date: '2024-05-01', desktop: 165, mobile: 220 },
-  { date: '2024-05-02', desktop: 293, mobile: 310 },
-  { date: '2024-05-03', desktop: 247, mobile: 190 },
-  { date: '2024-05-04', desktop: 385, mobile: 420 },
-  { date: '2024-05-05', desktop: 481, mobile: 390 },
-  { date: '2024-05-06', desktop: 498, mobile: 520 },
-  { date: '2024-05-07', desktop: 388, mobile: 300 },
-  { date: '2024-05-08', desktop: 149, mobile: 210 },
-  { date: '2024-05-09', desktop: 227, mobile: 180 },
-  { date: '2024-05-10', desktop: 293, mobile: 330 },
-  { date: '2024-05-11', desktop: 335, mobile: 270 },
-  { date: '2024-05-12', desktop: 197, mobile: 240 },
-  { date: '2024-05-13', desktop: 197, mobile: 160 },
-  { date: '2024-05-14', desktop: 448, mobile: 490 },
-  { date: '2024-05-15', desktop: 473, mobile: 380 },
-  { date: '2024-05-16', desktop: 338, mobile: 400 },
-  { date: '2024-05-17', desktop: 499, mobile: 420 },
-  { date: '2024-05-18', desktop: 315, mobile: 350 },
-  { date: '2024-05-19', desktop: 235, mobile: 180 },
-  { date: '2024-05-20', desktop: 177, mobile: 230 },
-  { date: '2024-05-21', desktop: 82, mobile: 140 },
-  { date: '2024-05-22', desktop: 81, mobile: 120 },
-  { date: '2024-05-23', desktop: 252, mobile: 290 },
-  { date: '2024-05-24', desktop: 294, mobile: 220 },
-  { date: '2024-05-25', desktop: 201, mobile: 250 },
-  { date: '2024-05-26', desktop: 213, mobile: 170 },
-  { date: '2024-05-27', desktop: 420, mobile: 460 },
-  { date: '2024-05-28', desktop: 233, mobile: 190 },
-  { date: '2024-05-29', desktop: 78, mobile: 130 },
-  { date: '2024-05-30', desktop: 340, mobile: 280 },
-  { date: '2024-05-31', desktop: 178, mobile: 230 },
-  { date: '2024-06-01', desktop: 178, mobile: 200 },
-  { date: '2024-06-02', desktop: 470, mobile: 410 },
-  { date: '2024-06-03', desktop: 103, mobile: 160 },
-  { date: '2024-06-04', desktop: 439, mobile: 380 },
-  { date: '2024-06-05', desktop: 88, mobile: 140 },
-  { date: '2024-06-06', desktop: 294, mobile: 250 },
-  { date: '2024-06-07', desktop: 323, mobile: 370 },
-  { date: '2024-06-08', desktop: 385, mobile: 320 },
-  { date: '2024-06-09', desktop: 438, mobile: 480 },
-  { date: '2024-06-10', desktop: 155, mobile: 200 },
-  { date: '2024-06-11', desktop: 92, mobile: 150 },
-  { date: '2024-06-12', desktop: 492, mobile: 420 },
-  { date: '2024-06-13', desktop: 81, mobile: 130 },
-  { date: '2024-06-14', desktop: 426, mobile: 380 },
-  { date: '2024-06-15', desktop: 307, mobile: 350 },
-  { date: '2024-06-16', desktop: 371, mobile: 310 },
-  { date: '2024-06-17', desktop: 475, mobile: 520 },
-  { date: '2024-06-18', desktop: 107, mobile: 170 },
-  { date: '2024-06-19', desktop: 341, mobile: 290 },
-  { date: '2024-06-20', desktop: 408, mobile: 450 },
-  { date: '2024-06-21', desktop: 169, mobile: 210 },
-  { date: '2024-06-22', desktop: 317, mobile: 270 },
-  { date: '2024-06-23', desktop: 480, mobile: 530 },
-  { date: '2024-06-24', desktop: 132, mobile: 180 },
-  { date: '2024-06-25', desktop: 141, mobile: 190 },
-  { date: '2024-06-26', desktop: 434, mobile: 380 },
-  { date: '2024-06-27', desktop: 448, mobile: 490 },
-  { date: '2024-06-28', desktop: 149, mobile: 200 },
-  { date: '2024-06-29', desktop: 103, mobile: 160 },
-  { date: '2024-06-30', desktop: 446, mobile: 400 }
+  { date: '2024-04-01', buyOrders: 2220, sellOrders: 1500 },
+  { date: '2024-04-02', buyOrders: 970, sellOrders: 1800 },
+  { date: '2024-04-03', buyOrders: 1670, sellOrders: 1200 },
+  { date: '2024-04-04', buyOrders: 2420, sellOrders: 2600 },
+  { date: '2024-04-05', buyOrders: 3730, sellOrders: 2900 },
+  { date: '2024-04-06', buyOrders: 3010, sellOrders: 3400 },
+  { date: '2024-04-07', buyOrders: 2450, sellOrders: 1800 },
+  { date: '2024-04-08', buyOrders: 4090, sellOrders: 3200 },
+  { date: '2024-04-09', buyOrders: 590, sellOrders: 1100 },
+  { date: '2024-04-10', buyOrders: 2610, sellOrders: 1900 },
+  { date: '2024-04-11', buyOrders: 3270, sellOrders: 3500 },
+  { date: '2024-04-12', buyOrders: 2920, sellOrders: 2100 },
+  { date: '2024-04-13', buyOrders: 3420, sellOrders: 3800 },
+  { date: '2024-04-14', buyOrders: 1370, sellOrders: 2200 },
+  { date: '2024-04-15', buyOrders: 1200, sellOrders: 1700 },
+  { date: '2024-04-16', buyOrders: 1380, sellOrders: 1900 },
+  { date: '2024-04-17', buyOrders: 4460, sellOrders: 3600 },
+  { date: '2024-04-18', buyOrders: 3640, sellOrders: 4100 },
+  { date: '2024-04-19', buyOrders: 2430, sellOrders: 1800 },
+  { date: '2024-04-20', buyOrders: 890, sellOrders: 1500 },
+  { date: '2024-04-21', buyOrders: 1370, sellOrders: 2000 },
+  { date: '2024-04-22', buyOrders: 2240, sellOrders: 1700 },
+  { date: '2024-04-23', buyOrders: 1380, sellOrders: 2300 },
+  { date: '2024-04-24', buyOrders: 3870, sellOrders: 2900 },
+  { date: '2024-04-25', buyOrders: 2150, sellOrders: 2500 },
+  { date: '2024-04-26', buyOrders: 750, sellOrders: 1300 },
+  { date: '2024-04-27', buyOrders: 3830, sellOrders: 4200 },
+  { date: '2024-04-28', buyOrders: 1220, sellOrders: 1800 },
+  { date: '2024-04-29', buyOrders: 3150, sellOrders: 2400 },
+  { date: '2024-04-30', buyOrders: 4540, sellOrders: 3800 },
+  { date: '2024-05-01', buyOrders: 1650, sellOrders: 2200 },
+  { date: '2024-05-02', buyOrders: 2930, sellOrders: 3100 },
+  { date: '2024-05-03', buyOrders: 2470, sellOrders: 1900 },
+  { date: '2024-05-04', buyOrders: 3850, sellOrders: 4200 },
+  { date: '2024-05-05', buyOrders: 4810, sellOrders: 3900 },
+  { date: '2024-05-06', buyOrders: 4980, sellOrders: 5200 },
+  { date: '2024-05-07', buyOrders: 3880, sellOrders: 3000 },
+  { date: '2024-05-08', buyOrders: 1490, sellOrders: 2100 },
+  { date: '2024-05-09', buyOrders: 2270, sellOrders: 1800 },
+  { date: '2024-05-10', buyOrders: 2930, sellOrders: 3300 },
+  { date: '2024-05-11', buyOrders: 3350, sellOrders: 2700 },
+  { date: '2024-05-12', buyOrders: 1970, sellOrders: 2400 },
+  { date: '2024-05-13', buyOrders: 1970, sellOrders: 1600 },
+  { date: '2024-05-14', buyOrders: 4480, sellOrders: 4900 },
+  { date: '2024-05-15', buyOrders: 4730, sellOrders: 3800 },
+  { date: '2024-05-16', buyOrders: 3380, sellOrders: 4000 },
+  { date: '2024-05-17', buyOrders: 4990, sellOrders: 4200 },
+  { date: '2024-05-18', buyOrders: 3150, sellOrders: 3500 },
+  { date: '2024-05-19', buyOrders: 2350, sellOrders: 1800 },
+  { date: '2024-05-20', buyOrders: 1770, sellOrders: 2300 },
+  { date: '2024-05-21', buyOrders: 820, sellOrders: 1400 },
+  { date: '2024-05-22', buyOrders: 810, sellOrders: 1200 },
+  { date: '2024-05-23', buyOrders: 2520, sellOrders: 2900 },
+  { date: '2024-05-24', buyOrders: 2940, sellOrders: 2200 },
+  { date: '2024-05-25', buyOrders: 2010, sellOrders: 2500 },
+  { date: '2024-05-26', buyOrders: 2130, sellOrders: 1700 },
+  { date: '2024-05-27', buyOrders: 4200, sellOrders: 4600 },
+  { date: '2024-05-28', buyOrders: 2330, sellOrders: 1900 },
+  { date: '2024-05-29', buyOrders: 780, sellOrders: 1300 },
+  { date: '2024-05-30', buyOrders: 3400, sellOrders: 2800 },
+  { date: '2024-05-31', buyOrders: 1780, sellOrders: 2300 },
+  { date: '2024-06-01', buyOrders: 1780, sellOrders: 2000 },
+  { date: '2024-06-02', buyOrders: 4700, sellOrders: 4100 },
+  { date: '2024-06-03', buyOrders: 1030, sellOrders: 1600 },
+  { date: '2024-06-04', buyOrders: 4390, sellOrders: 3800 },
+  { date: '2024-06-05', buyOrders: 880, sellOrders: 1400 },
+  { date: '2024-06-06', buyOrders: 2940, sellOrders: 2500 },
+  { date: '2024-06-07', buyOrders: 3230, sellOrders: 3700 },
+  { date: '2024-06-08', buyOrders: 3850, sellOrders: 3200 },
+  { date: '2024-06-09', buyOrders: 4380, sellOrders: 4800 },
+  { date: '2024-06-10', buyOrders: 1550, sellOrders: 2000 },
+  { date: '2024-06-11', buyOrders: 920, sellOrders: 1500 },
+  { date: '2024-06-12', buyOrders: 4920, sellOrders: 4200 },
+  { date: '2024-06-13', buyOrders: 810, sellOrders: 1300 },
+  { date: '2024-06-14', buyOrders: 4260, sellOrders: 3800 },
+  { date: '2024-06-15', buyOrders: 3070, sellOrders: 3500 },
+  { date: '2024-06-16', buyOrders: 3710, sellOrders: 3100 },
+  { date: '2024-06-17', buyOrders: 4750, sellOrders: 5200 },
+  { date: '2024-06-18', buyOrders: 1070, sellOrders: 1700 },
+  { date: '2024-06-19', buyOrders: 3410, sellOrders: 2900 },
+  { date: '2024-06-20', buyOrders: 4080, sellOrders: 4500 },
+  { date: '2024-06-21', buyOrders: 1690, sellOrders: 2100 },
+  { date: '2024-06-22', buyOrders: 3170, sellOrders: 2700 },
+  { date: '2024-06-23', buyOrders: 4800, sellOrders: 5300 },
+  { date: '2024-06-24', buyOrders: 1320, sellOrders: 1800 },
+  { date: '2024-06-25', buyOrders: 1410, sellOrders: 1900 },
+  { date: '2024-06-26', buyOrders: 4340, sellOrders: 3800 },
+  { date: '2024-06-27', buyOrders: 4480, sellOrders: 4900 },
+  { date: '2024-06-28', buyOrders: 1490, sellOrders: 2000 },
+  { date: '2024-06-29', buyOrders: 1030, sellOrders: 1600 },
+  { date: '2024-06-30', buyOrders: 4460, sellOrders: 4000 }
 ];
 
 const chartConfig = {
-  views: {
-    label: 'Page Views'
-  },
-  desktop: {
-    label: 'Desktop',
+  buyOrders: {
+    label: 'Buy Orders',
     color: 'hsl(var(--chart-1))'
   },
-  mobile: {
-    label: 'Mobile',
+  sellOrders: {
+    label: 'Sell Orders',
     color: 'hsl(var(--chart-2))'
   }
 } satisfies ChartConfig;
 
 export function BarGraph() {
   const [activeChart, setActiveChart] =
-    React.useState<keyof typeof chartConfig>('desktop');
+    React.useState<keyof typeof chartConfig>('buyOrders');
 
   const total = React.useMemo(
     () => ({
-      desktop: chartData.reduce((acc, curr) => acc + curr.desktop, 0),
-      mobile: chartData.reduce((acc, curr) => acc + curr.mobile, 0)
+      buyOrders: chartData.reduce((acc, curr) => acc + curr.buyOrders, 0),
+      sellOrders: chartData.reduce((acc, curr) => acc + curr.sellOrders, 0)
     }),
     []
   );
@@ -149,7 +146,7 @@ export function BarGraph() {
           </CardDescription>
         </div>
         <div className="flex">
-          {['desktop', 'mobile'].map((key) => {
+          {['buyOrders', 'sellOrders'].map((key) => {
             const chart = key as keyof typeof chartConfig;
             return (
               <button
@@ -162,7 +159,7 @@ export function BarGraph() {
                   {chartConfig[chart].label}
                 </span>
                 <span className="text-lg font-bold leading-none sm:text-3xl">
-                  {total[key as keyof typeof total].toLocaleString()}
+                  {total[chart].toLocaleString()}
                 </span>
               </button>
             );
